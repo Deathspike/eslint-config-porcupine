@@ -19,7 +19,7 @@
   },
   "scripts": {
     "eslint": "eslint --max-warnings 0",
-    "prepack": "tsc index.js --allowJs --declaration --emitDeclarationOnly --removeComments --strict",
+    "prepack": "tsc index.js --allowJs --declaration --emitDeclarationOnly --removeComments --strict --skipLibCheck",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "test": "npm run prettier:check && npm run tsc:build && npm run eslint",
