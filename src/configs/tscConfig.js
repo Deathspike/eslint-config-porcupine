@@ -21,7 +21,7 @@ const js = {
 
 export function tscConfig() {
   return [
-    tseslint.configs.all,
+    ...tseslint.configs.all,
     { rules: prefix(all, "@typescript-eslint") },
     { files: ["**/*.{js,jsx}"], rules: prefix(js, "@typescript-eslint") },
     { languageOptions: { parserOptions: { projectService: true } } },
