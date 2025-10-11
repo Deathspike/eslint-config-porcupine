@@ -15,13 +15,11 @@ _Porcupine_ assumes _Prettier_ already disciplines your code's formatting, leavi
 
 ## 🏰 Becoming a Vassal State
 
-Swear fealty to _Porcupine_ and receive its spiny protection:
+Swear fealty to the _Porcupine_ and receive its spiny protection:
 
-```bash
-npm install --save-dev eslint eslint-config-porcupine
-```
+    npm install --save-dev eslint eslint-config-porcupine
 
-Once the pact is sealed, add _Porcupine's_ governance in your `eslint.config.js`:
+Once the pact is sealed, add the _Porcupine's_ governance in your `eslint.config.js`:
 
 ```js
 import { porcupine } from "eslint-config-porcupine";
@@ -30,6 +28,27 @@ import { defineConfig } from "eslint/config";
 export default defineConfig(porcupine());
 ```
 
-## 💎 Offerings to the Porcupine
+Then inscribe these incantations into your `package.json`, so the _Porcupine_ may evaluate your sins:
 
-_Porcupine_ accepts no decrees, proposals, or revolutions — its laws are immutable. Only reports of genuine **bugs or pleas for assistance** in deciphering its will shall be entertained. All other offerings will be ceremoniously ignored while _Porcupine_ resumes its quiet, judgmental watch.
+```json
+{
+  "type": "module",
+  "scripts": {
+    "eslint": "eslint --max-warnings 0",
+    "prettier": "prettier --check .",
+    "test": "npm run prettier && npm run eslint"
+  }
+}
+```
+
+## 🧾 The Rite of Lintification
+
+To test your worthiness before the _Porcupine_, utter the sacred words:
+
+    npm test
+
+If no errors arise and the spikes stay sheathed, you have pleased the _Porcupine_.
+
+## 💎 Petitions to the Porcupine
+
+_Porcupine_ accepts no decrees, proposals, or revolutions — its laws are immutable. Only reports of a genuine **bug or plea for assistance** in deciphering its will shall be entertained. All other offerings will be ceremoniously ignored while _Porcupine_ resumes its quiet, judgmental watch.
