@@ -30,19 +30,6 @@ import { defineConfig } from "eslint/config";
 export default defineConfig(porcupine());
 ```
 
-If your state demands it, extend _Porcupine's_ reach with environment-specific globals:
-
-```js
-import { porcupine } from "eslint-config-porcupine";
-import { defineConfig } from "eslint/config";
-import globals from "globals";
-
-export default defineConfig([
-  ...porcupine(),
-  { languageOptions: { globals: { ...globals.node } } },
-]);
-```
-
 ## 💎 Offerings to the Porcupine
 
 _Porcupine_ accepts no decrees, proposals, or revolutions — its laws are immutable. Only reports of genuine **bugs or pleas for assistance** in deciphering its will shall be entertained. All other offerings will be ceremoniously ignored while _Porcupine_ resumes its quiet, judgmental watch.
