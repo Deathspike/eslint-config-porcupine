@@ -7,6 +7,7 @@ import { unicornFilenameCase } from "./rules/unicornFilenameCase.js";
 const all = {
   "unicorn/filename-case": ["error", unicornFilenameCase],
   "unicorn/no-array-callback-reference": "off",
+  "unicorn/switch-case-braces": ["error", "avoid"],
 };
 
 export function unicornConfig() {
