@@ -4,6 +4,7 @@ import jsdoc from "eslint-plugin-jsdoc";
 /** @type {Linter.RulesRecord} */
 const js = {
   "jsdoc/no-types": "off",
+  "jsdoc/no-undefined-types": ["error", { disableReporting: true }],
 };
 
 export function jsdocConfig() {
