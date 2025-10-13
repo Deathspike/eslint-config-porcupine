@@ -4,6 +4,7 @@ import tseslint from "typescript-eslint";
 /** @type {Linter.RulesRecord} */
 const all = {
   "@typescript-eslint/no-unused-vars": "off",
+  "@typescript-eslint/no-use-before-define": ["error", { functions: false }],
   "@typescript-eslint/restrict-template-expressions": "off",
 };
 
