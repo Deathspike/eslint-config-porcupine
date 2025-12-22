@@ -1,6 +1,10 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - directory: "/"
+    package-ecosystem: "npm"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
     schedule:
       interval: "weekly"
