@@ -3,7 +3,7 @@ updates:
   - directory: "/"
     package-ecosystem: "npm"
     groups:
-      all-dependencies:
+      npm:
         patterns:
           - "*"
     schedule:
