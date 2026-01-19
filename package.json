@@ -5,13 +5,13 @@
   "type": "module",
   "dependencies": {
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-perfectionist": "5.0.0",
+    "eslint-plugin-perfectionist": "5.3.1",
     "eslint-plugin-unicorn": "62.0.0",
-    "typescript-eslint": "8.50.0"
+    "typescript-eslint": "8.53.1"
   },
   "devDependencies": {
     "eslint": "9.39.2",
-    "prettier": "3.7.4",
+    "prettier": "3.8.0",
     "prettier-plugin-jsdoc": "1.8.0",
     "typescript": "5.9.3"
   },
