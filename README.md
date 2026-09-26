@@ -17,7 +17,7 @@ _Porcupine_ assumes _Prettier_ already disciplines your code's formatting, leavi
 
 Swear fealty to the _Porcupine_ and receive its spiny protection:
 
-    npm install --save-dev eslint eslint-config-porcupine
+    npm install --save-dev eslint eslint-config-porcupine prettier
 
 Once the pact is sealed, add the _Porcupine's_ governance in your `eslint.config.js`:
 
@@ -34,9 +34,11 @@ Then inscribe these incantations into your `package.json`, so the _Porcupine_ ma
 {
   "type": "module",
   "scripts": {
-    "eslint": "eslint --max-warnings 0",
-    "prettier": "prettier --check .",
-    "test": "npm run prettier && npm run eslint"
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint:check": "eslint --max-warnings 0",
+    "lint:fix": "eslint --fix",
+    "test": "npm run lint:check && npm run format:check"
   }
 }
 ```
