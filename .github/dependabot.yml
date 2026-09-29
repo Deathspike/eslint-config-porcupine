@@ -1,10 +1,20 @@
 version: 2
 updates:
-  - directory: "/"
-    package-ecosystem: "npm"
+  - directory: /
+    package-ecosystem: npm
+    ignore:
+      - dependency-name: typescript
+        update-types:
+          - version-update:semver-major
     groups:
       npm:
         patterns:
           - "*"
     schedule:
-      interval: "weekly"
+      day: thursday
+      interval: weekly
+  - directory: /
+    package-ecosystem: github-actions
+    schedule:
+      day: thursday
+      interval: weekly
