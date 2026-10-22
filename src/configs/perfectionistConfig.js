@@ -1,8 +1,9 @@
 import { Linter } from "eslint";
 import perfectionist from "eslint-plugin-perfectionist";
 
-/** @type {Linter.RulesRecord} */
-const all = {};
+import { withRulePrefix } from "./utils/withRulePrefix.js";
+
+const all = withRulePrefix("perfectionist", {});
 
 /** @type {Linter.Config[]} */
 export const perfectionistConfig = [
