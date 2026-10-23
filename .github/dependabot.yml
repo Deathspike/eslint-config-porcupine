@@ -17,5 +17,5 @@ updates:
 multi-ecosystem-groups:
   all:
     schedule:
-      day: thursday
+      day: monday
       interval: weekly
