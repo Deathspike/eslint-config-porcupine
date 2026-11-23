@@ -6,12 +6,12 @@
   "dependencies": {
     "@eslint/js": "10.0.1",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-perfectionist": "5.13.0",
-    "eslint-plugin-unicorn": "79.0.0",
-    "typescript-eslint": "8.72.2"
+    "eslint-plugin-perfectionist": "5.14.0",
+    "eslint-plugin-unicorn": "80.0.0",
+    "typescript-eslint": "8.73.0"
   },
   "devDependencies": {
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "prettier": "3.10.1",
     "prettier-plugin-jsdoc": "1.8.1",
     "typescript": "6.0.3"
@@ -29,7 +29,7 @@
     }
   },
   "peerDependencies": {
-    "eslint": "^10.14.0",
+    "eslint": "^10.15.0",
     "typescript": "^6.0.3"
   },
   "scripts": {
